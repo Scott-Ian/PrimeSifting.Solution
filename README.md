@@ -17,7 +17,6 @@ This application return all prime numbers from 1 to user inputted number.
 
 | Behavior | Input | Output|
 |----------|-------|-------|
-| The program instantiates a PrimeNumber class object with a user submitted input | 9 | PrimeNumberObject |
 | The program will create a list of numbers from 2 through the user submitted number | 5 | 2,3,4,5|
 | The program will return a list of all prime numbers from 2 through the user submtited number | 5 | 2, 3, 5 |
 | The program will only accept positive numbers 2 or greater as input, and will reject all other submissions | -3 | Please enter a number greater than or equal to 2 |

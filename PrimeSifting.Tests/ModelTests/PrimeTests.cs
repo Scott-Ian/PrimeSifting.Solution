@@ -1,16 +1,25 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using PrimeSifting;
+using System.Collections.Generic;
 
-namespace ProjectName.Tests
+namespace PrimeSifting.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class PrimeTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void PrimeConstructor_CreatesInstanceOfPrime_Prime()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      //Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      Prime newPrime = new Prime();
+      Assert.AreEqual(typeof(Prime), newPrime.GetType());
+    }
+
+    [TestMethod]
+    public void NumberList_CreatesListOfNumbersFromTwoToNumber_ListOfIntegersNumbers()
+    {
+      List<int> testList = new List<int>{2, 3, 4, 5};
+      List<int> resultList = Prime.NumberList(5);
+      CollectionAssert.AreEqual(testList, resultList);
     }
   }
 }

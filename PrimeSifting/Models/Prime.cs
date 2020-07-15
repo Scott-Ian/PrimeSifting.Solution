@@ -6,7 +6,12 @@ namespace PrimeSifting
   {
     public static List<int> NumberList(int number)
     {
-      return new List<int>();
+      List<int> resultList = new List<int>();
+      for(int i = 2; i<=number; i++)
+      {
+        resultList.Add(i);
+      }
+      return resultList;
     }
     //int number;
     //Prime.methodToGetPrimes(number);
