@@ -13,19 +13,10 @@ namespace PrimeSifting
       }
       return resultList;
     }
-    //int number;
-    //Prime.methodToGetPrimes(number);
-    // properties, constructors, methods, etc. go here
-    
-    //private List<int> NumberList(int number)
-    // {
-    //   // Generates list of all numbers
-    // }
 
-    // public list PrimeCalculator()
-    // {
-    //   return primeList;
-    // }
-
+    public static List<int> PrimeCalculatorList(int number)
+    {
+      return new List<int>();
+    }
   }
 }
