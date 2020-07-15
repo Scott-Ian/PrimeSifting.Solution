@@ -16,7 +16,20 @@ namespace PrimeSifting
 
     public static List<int> PrimeCalculatorList(int number)
     {
-      return new List<int>();
+      List<int> numberList = NumberList(number);
+      int prime = numberList[0];
+      while(prime < number)
+      {
+        if(numberList.Contains(prime))
+        {
+          for(int i = prime*2; i<=number; i+=prime)
+          {
+            numberList.Remove(i);
+          }
+        }
+        prime ++;
+      }
+      return numberList;
     }
   }
 }

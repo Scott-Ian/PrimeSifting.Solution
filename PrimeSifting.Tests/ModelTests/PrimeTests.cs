@@ -25,8 +25,8 @@ namespace PrimeSifting.Tests
     [TestMethod]
     public void PrimeCalculatorList_ReturnListOfPrimeNumbersFromTwoToNumber_ListOfPrimeIntegersNumbers()
     {
-      List<int> testList = new List<int>{2, 3, 4, 5};
-      List<int> primeList = Prime.PrimeCalculatorList(5);
+      List<int> testList = new List<int>{2, 3, 5, 7, 11, 13};
+      List<int> primeList = Prime.PrimeCalculatorList(15);
       CollectionAssert.AreEqual(testList, primeList);
     }
   }
